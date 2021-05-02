@@ -1,6 +1,10 @@
 import { useState } from "react"
+import {useHistory} from 'react-router-dom'
 
 const Create = () => {
+
+
+    const history=useHistory()
 
     const [title,setTitle]=useState('')
     const [body,setBody]=useState('')
@@ -22,6 +26,7 @@ const Create = () => {
         }).then(()=>{
             console.log('fetch added')
             setPending(false)
+            history.push('/')
         })
     }
 
