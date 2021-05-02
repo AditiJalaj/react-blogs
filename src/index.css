@@ -77,6 +77,7 @@
 
 .blog-details div{
   margin: 20px 10px;
+ 
 }
 
 .blog-details button{
@@ -86,7 +87,9 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-  
+  display: flex;
+  justify-content:space-between;
+ 
 }
 
 

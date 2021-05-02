@@ -12,8 +12,17 @@ const BlogDetails = () => {
         }).then(()=>{
             history.push('/')
         })
-
     }
+
+
+    //MAKE A PROPER WAY OF EDITING BLOG OPTION HERE
+    // const handleEdit=()=>{
+    //     fetch('http://localhost:8000/blogs/'+id,{
+    //         method:'PUT'
+    //     }).then(()=>{
+           
+    //     })
+    // }
 
     return (  
         <div className="blog-details">
@@ -24,6 +33,8 @@ const BlogDetails = () => {
             <h3>-Written by {blog.author}</h3>
             <div>{blog.body}</div>
             <button onClick={handleDelete}>Delete</button>
+            <br></br>
+            {/* </article>button onClick={handleEdit}>Edit</button> */}
             </article>
             
         }

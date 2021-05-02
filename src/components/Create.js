@@ -37,7 +37,7 @@ const Create = () => {
         <h2> ADD A NEW BLOG</h2>
         <form onSubmit={handleSubmit}>
 
-        <label>Blog author:</label>
+        <label>Blog Title:</label>
         <input type="text" 
         required 
         value={title}
