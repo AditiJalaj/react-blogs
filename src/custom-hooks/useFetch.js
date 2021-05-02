@@ -40,7 +40,7 @@ const useFetch=(url)=>{
          })
         },1000)
         return ()=>{
-            //abort whichevr fetch it's associated to 
+            //abort whichever fetch it's associated to 
             abortCont.abort() 
         }
     },[url])
